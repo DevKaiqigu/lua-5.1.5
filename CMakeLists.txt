@@ -9,6 +9,8 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 # remove warnings
 ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS ) 
 
+ADD_DEFINITIONS(-DLUA_USE_APICHECK)
+
 SET (HDR_LIBLUA
 src/lapi.h src/lauxlib.h src/lcode.h src/ldebug.h src/ldo.h src/lfunc.h
 src/lgc.h src/llex.h src/llimits.h src/lmem.h src/lobject.h src/lopcodes.h src/lparser.h
